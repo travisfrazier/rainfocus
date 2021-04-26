@@ -1,0 +1,51 @@
+//Google Font Import ---------- //
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;$font-bold&display=swap');
+
+//SASS Variables ---------- //
+$font-main: 'Open Sans', sans-serif;
+$color-bg: #d1d1d1;
+$color-light: #ffffff;
+$color-dark: #000;
+$color-main: #792263;
+$color-secondary: #d63294;
+$color-main-dark: #6d164a;
+$color-border: #94909062;
+$font-light: 300;
+$font-bold: 600;
+
+
+//SASS Partial Imports ---------- //
+@import 'partials/reset';
+@import 'partials/nav';
+@import 'partials/box';
+@import 'partials/table';
+@import 'partials/modal';
+
+//Global Styles ---------- //
+html {
+  font-size: 62.5%; // makes 1rem = 10px
+}
+.c-body {
+  background: #d1d1d1;
+  font-family: $font-main;
+  font-size: 1.4rem; //16px
+  @media only screen and (max-width: 600px) {
+    font-size: 1.25rem;
+  }
+}
+.c-main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media only screen and (max-width: 1350px) {
+    padding-left: 70px;
+    padding-right: 17.5px;
+  }
+}
+.c-line {
+  display: inline-block;
+  border-left: 2px solid $color-main;
+  height: 18px;
+  padding-right: 8px;
+}

@@ -1,0 +1,37 @@
+.c-table {
+  border-collapse: collapse;
+}
+.c-table__heads {
+  th {
+    padding: 5px 15.5px 5px 5px;
+    text-align: left;
+    color: $color-main;
+    border-bottom: 1px solid $color-main;
+  }
+}
+td {
+  padding: 5px 15.5px 5px 5px;
+}
+
+.c-table__head {
+  width: 20%;
+}
+
+.c-table__checkbox > input {
+  height: 15px;
+  width: 15px;
+  appearance: none;
+  border: 1px solid $color-main;
+  border-radius: 2px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c-table__checkbox > input:checked {
+  border: 1px solid $color-main;
+  background-color: $color-main;
+}
+
+
