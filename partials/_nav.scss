@@ -4,6 +4,10 @@
   height: 100vh;
   overflow: scroll;
   box-shadow: 3px 0px 9px 0px $color-dark;
+  width: 60px;
+  @media only screen and (max-width: 600px) {
+    width: 50px;
+  }
 }
 .c-nav__list--top,
 .c-nav__list--bottom {
@@ -13,6 +17,12 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+}
+.c-nav__list--bottom {
+  //Keeps all navigation items visible when screen height is altered
+  @media only screen and (max-height: 700px) {
+    padding-bottom: 5rem;
+  }
 }
 .c-nav__list--top {
   border-bottom: 2px solid $color-border;
@@ -42,8 +52,12 @@
   justify-content: center;
   padding-top: 10px;
   border-top: 2px solid $color-border;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   background-color: $color-main;
   bottom: 0;
+  width: 60px;
+  @media only screen and (max-width: 600px) {
+    width: 50px;
+  }
 }

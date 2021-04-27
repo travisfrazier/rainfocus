@@ -105,6 +105,9 @@
   align-items: center;
   height: 60px;
   padding-right: 10px;
+  @media only screen and (max-width: 600px) {
+    line-height: 100%;
+  }
 }
 .c-boxTwo__text {
   width: 75%;
